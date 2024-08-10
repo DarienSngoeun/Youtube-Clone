@@ -1,0 +1,11 @@
+export const apiKey = "AIzaSyC7vQ2zo7yDR1zS0eMNDGND8DsntcshPWY";
+
+export const valueConverter = (value) => {
+  if (value >= 1000000) {
+    return Math.floor(value / 1000000) + "M";
+  } else if (value >= 1000) {
+    return Math.floor(value / 1000) + "K";
+  } else {
+    return value;
+  }
+};
